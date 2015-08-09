@@ -14,6 +14,14 @@
 		A502C9ED1B77E1FD00D01E81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A502C9EC1B77E1FD00D01E81 /* Images.xcassets */; };
 		A502C9F01B77E1FD00D01E81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A502C9EE1B77E1FD00D01E81 /* LaunchScreen.xib */; };
 		A502C9FC1B77E1FD00D01E81 /* Dice_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502C9FB1B77E1FD00D01E81 /* Dice_Tests.swift */; };
+		A502CA061B77E23C00D01E81 /* BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A502CA051B77E23C00D01E81 /* BG.jpg */; };
+		A502CA081B77E2BC00D01E81 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502CA071B77E2BC00D01E81 /* Dice.swift */; };
+		A502CA0F1B77E3E900D01E81 /* Dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = A502CA091B77E3E900D01E81 /* Dice1.png */; };
+		A502CA101B77E3E900D01E81 /* Dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = A502CA0A1B77E3E900D01E81 /* Dice2.png */; };
+		A502CA111B77E3E900D01E81 /* Dice3.png in Resources */ = {isa = PBXBuildFile; fileRef = A502CA0B1B77E3E900D01E81 /* Dice3.png */; };
+		A502CA121B77E3E900D01E81 /* Dice4.png in Resources */ = {isa = PBXBuildFile; fileRef = A502CA0C1B77E3E900D01E81 /* Dice4.png */; };
+		A502CA131B77E3E900D01E81 /* Dice5.png in Resources */ = {isa = PBXBuildFile; fileRef = A502CA0D1B77E3E900D01E81 /* Dice5.png */; };
+		A502CA141B77E3E900D01E81 /* Dice6.png in Resources */ = {isa = PBXBuildFile; fileRef = A502CA0E1B77E3E900D01E81 /* Dice6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		A502C9F51B77E1FD00D01E81 /* Dice!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A502C9FA1B77E1FD00D01E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A502C9FB1B77E1FD00D01E81 /* Dice_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_Tests.swift; sourceTree = "<group>"; };
+		A502CA051B77E23C00D01E81 /* BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG.jpg; sourceTree = "<group>"; };
+		A502CA071B77E2BC00D01E81 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		A502CA091B77E3E900D01E81 /* Dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice1.png; sourceTree = "<group>"; };
+		A502CA0A1B77E3E900D01E81 /* Dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice2.png; sourceTree = "<group>"; };
+		A502CA0B1B77E3E900D01E81 /* Dice3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice3.png; sourceTree = "<group>"; };
+		A502CA0C1B77E3E900D01E81 /* Dice4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice4.png; sourceTree = "<group>"; };
+		A502CA0D1B77E3E900D01E81 /* Dice5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice5.png; sourceTree = "<group>"; };
+		A502CA0E1B77E3E900D01E81 /* Dice6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +97,18 @@
 			children = (
 				A502C9E21B77E1FD00D01E81 /* AppDelegate.swift */,
 				A502C9E71B77E1FD00D01E81 /* ViewController.swift */,
+				A502CA071B77E2BC00D01E81 /* Dice.swift */,
 				A502C9E91B77E1FD00D01E81 /* Main.storyboard */,
 				A502C9EC1B77E1FD00D01E81 /* Images.xcassets */,
 				A502C9EE1B77E1FD00D01E81 /* LaunchScreen.xib */,
 				A502C9E41B77E1FD00D01E81 /* Dice_.xcdatamodeld */,
 				A502C9E01B77E1FD00D01E81 /* Supporting Files */,
+				A502CA091B77E3E900D01E81 /* Dice1.png */,
+				A502CA0A1B77E3E900D01E81 /* Dice2.png */,
+				A502CA0B1B77E3E900D01E81 /* Dice3.png */,
+				A502CA0C1B77E3E900D01E81 /* Dice4.png */,
+				A502CA0D1B77E3E900D01E81 /* Dice5.png */,
+				A502CA0E1B77E3E900D01E81 /* Dice6.png */,
 			);
 			path = "Dice!";
 			sourceTree = "<group>";
@@ -93,6 +116,7 @@
 		A502C9E01B77E1FD00D01E81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A502CA051B77E23C00D01E81 /* BG.jpg */,
 				A502C9E11B77E1FD00D01E81 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -196,8 +220,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A502C9EB1B77E1FD00D01E81 /* Main.storyboard in Resources */,
+				A502CA141B77E3E900D01E81 /* Dice6.png in Resources */,
+				A502CA0F1B77E3E900D01E81 /* Dice1.png in Resources */,
 				A502C9F01B77E1FD00D01E81 /* LaunchScreen.xib in Resources */,
+				A502CA061B77E23C00D01E81 /* BG.jpg in Resources */,
 				A502C9ED1B77E1FD00D01E81 /* Images.xcassets in Resources */,
+				A502CA131B77E3E900D01E81 /* Dice5.png in Resources */,
+				A502CA121B77E3E900D01E81 /* Dice4.png in Resources */,
+				A502CA111B77E3E900D01E81 /* Dice3.png in Resources */,
+				A502CA101B77E3E900D01E81 /* Dice2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +248,7 @@
 			files = (
 				A502C9E81B77E1FD00D01E81 /* ViewController.swift in Sources */,
 				A502C9E61B77E1FD00D01E81 /* Dice_.xcdatamodeld in Sources */,
+				A502CA081B77E2BC00D01E81 /* Dice.swift in Sources */,
 				A502C9E31B77E1FD00D01E81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

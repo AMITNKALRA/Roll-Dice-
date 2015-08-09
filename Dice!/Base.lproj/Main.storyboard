@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-UltraLight</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Dice_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ycm-vf-KFH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47l-tD-Jon">
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSb-ON-Zc2">
+                                <rect key="frame" x="16" y="524" width="382" height="80"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="ROLL DA DICE!">
+                                    <color key="titleColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollDaDice:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fCb-Vh-gMB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4C-8s-7Ht">
+                                <rect key="frame" x="289" y="239" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="47l-tD-Jon" firstAttribute="centerY" secondItem="Ycm-vf-KFH" secondAttribute="centerY" id="4Md-Xe-RgY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="PSb-ON-Zc2" secondAttribute="bottom" constant="132" id="4bY-hY-by2"/>
+                            <constraint firstItem="Ycm-vf-KFH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="DiG-tS-LWG"/>
+                            <constraint firstItem="PSb-ON-Zc2" firstAttribute="centerX" secondItem="47l-tD-Jon" secondAttribute="centerX" id="EU7-CW-WuG"/>
+                            <constraint firstAttribute="trailing" secondItem="Ycm-vf-KFH" secondAttribute="trailing" id="LIW-G4-GES"/>
+                            <constraint firstItem="PSb-ON-Zc2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Pd6-wI-ye7"/>
+                            <constraint firstItem="PSb-ON-Zc2" firstAttribute="top" secondItem="47l-tD-Jon" secondAttribute="bottom" constant="56" id="UrR-f1-tQt"/>
+                            <constraint firstItem="47l-tD-Jon" firstAttribute="centerX" secondItem="Ycm-vf-KFH" secondAttribute="centerX" id="f0U-nT-VV6"/>
+                            <constraint firstItem="47l-tD-Jon" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="248" id="lWo-t6-C6q"/>
+                            <constraint firstItem="47l-tD-Jon" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="91" id="o9s-cA-qhK"/>
+                            <constraint firstItem="Ycm-vf-KFH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="otd-I3-1Iy"/>
+                            <constraint firstItem="Ycm-vf-KFH" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="zw2-Cn-jie"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Dice" destination="47l-tD-Jon" id="CsY-86-zmm"/>
+                        <outlet property="aUselessLabel" destination="m4C-8s-7Ht" id="hbj-fs-DEd"/>
+                        <outlet property="backgroundImage" destination="Ycm-vf-KFH" id="TAS-68-mDp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="265" y="309"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BG.jpg" width="990" height="500"/>
+    </resources>
 </document>
